@@ -1,0 +1,20 @@
+{
+    "attributes": {
+      "values": [
+        {
+          "attributes": {
+            "input": {
+              "attributes": {
+                "name": "uid"
+              },
+              "type": "identityAttribute"
+            }
+          },
+          "type": "lower"
+        },
+        "@tylermairose.com"
+      ]
+    },
+    "name": "MyNewTest",
+    "type": "concat"
+  }
