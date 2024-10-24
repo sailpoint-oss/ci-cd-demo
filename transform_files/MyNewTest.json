@@ -1,0 +1,76 @@
+{
+  "attributes": {
+    "endOfLastName": {
+      "attributes": {
+        "begin": 1,
+        "input": {
+          "attributes": {
+            "name": "lastname"
+          },
+          "type": "identityAttribute"
+        }
+      },
+      "type": "substring"
+    },
+    "firstInitialLowercase": {
+      "attributes": {
+        "input": {
+          "attributes": {
+            "begin": 0,
+            "end": 1,
+            "input": {
+              "attributes": {
+                "name": "firstname"
+              },
+              "type": "identityAttribute"
+            }
+          },
+          "type": "substring"
+        }
+      },
+      "type": "lower"
+    },
+    "hireDateMonth": {
+      "attributes": {
+        "delimiter": "-",
+        "index": "1",
+        "input": {
+          "attributes": {
+            "name": "startDate"
+          },
+          "type": "identityAttribute"
+        }
+      },
+      "type": "split"
+    },
+    "lastInitialUppercase": {
+      "attributes": {
+        "input": {
+          "attributes": {
+            "begin": 0,
+            "end": 1,
+            "input": {
+              "attributes": {
+                "name": "lastname"
+              },
+              "type": "identityAttribute"
+            }
+          },
+          "type": "substring"
+        }
+      },
+      "type": "upper"
+    },
+    "staticString": {
+      "attributes": {
+        "value": "RstP*!7"
+      },
+      "type": "static"
+    },
+    "value": "$firstInitialLowercase$lastInitialUppercase$endOfLastName$hireDateMonth$staticString"
+  },
+  "id": "93f59cc8-8cd0-48af-a1f2-6f4e36479d4f",
+  "internal": false,
+  "name": "MyNewTest",
+  "type": "static"
+}
