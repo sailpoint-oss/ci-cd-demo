@@ -1,0 +1,74 @@
+{
+  "name": "MyNewTest",
+  "type": "static",
+  "attributes": {
+    "firstInitialLowercase": {
+      "type": "lower",
+      "attributes": {
+        "input": {
+          "type": "substring",
+          "attributes": {
+            "input": {
+              "type": "identityAttribute",
+              "attributes": {
+                "name": "firstname"
+              }
+            },
+            "begin": 0,
+            "end": 1
+          }
+        }
+      }
+    },
+    "lastInitialUppercase": {
+      "type": "upper",
+      "attributes": {
+        "input": {
+          "type": "substring",
+          "attributes": {
+            "input": {
+              "type": "identityAttribute",
+              "attributes": {
+                "name": "lastname"
+              }
+            },
+            "begin": 0,
+            "end": 1
+          }
+        }
+      }
+    },
+    "endOfLastName": {
+      "type": "substring",
+      "attributes": {
+        "input": {
+          "type": "identityAttribute",
+          "attributes": {
+            "name": "lastname"
+          }
+        },
+        "begin": 1
+      }
+    },
+    "hireDateMonth": {
+      "type": "split",
+      "attributes": {
+        "delimiter": "-",
+        "index": "1",
+        "input": {
+          "type": "identityAttribute",
+          "attributes": {
+            "name": "startDate"
+          }
+        }
+      }
+    },
+    "staticString": {
+      "type": "static",
+      "attributes": {
+        "value": "RstP*!7"
+      }
+    },
+    "value": "$firstInitialLowercase$lastInitialUppercase$endOfLastName$hireDateMonth$staticString"
+  }
+}
