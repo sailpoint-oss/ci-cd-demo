@@ -1,34 +1,34 @@
 {
-    "attributes": {
-      "input": {
-        "attributes": {
-          "values": [
-            {
-              "attributes": {
-                "name": "firstname"
-              },
-              "type": "identityAttribute"
+  "attributes": {
+    "input": {
+      "attributes": {
+        "values": [
+          {
+            "attributes": {
+              "name": "firstname"
             },
-            {
+            "type": "identityAttribute"
+          },
+          {
+            "attributes": {
+              "begin": 0,
+              "end": 1,
+              "input": {
                 "attributes": {
-                  "begin": 0,
-                  "end": 1,
-                  "input": {
-                    "attributes": {
-                      "name": "lastname"
-                    },
-                    "type": "identityAttribute"
-                  }
+                  "name": "lastname"
                 },
-                "type": "substring"
+                "type": "identityAttribute"
               }
-          ]
-        },
-        "type": "concat"
-      }
-    },
-    "id": "ba879bcd-028c-4e12-978c-663d1b763dab",
-    "internal": false,
-    "name": "DeriveFirstNameLastInitial",
-    "type": "upper"
-  }
+            },
+            "type": "substring"
+          }
+        ]
+      },
+      "type": "concat"
+    }
+  },
+  "id": "7ce50649-7517-4d25-893b-430f0420576f",
+  "internal": false,
+  "name": "DeriveFirstNameLastInitial",
+  "type": "upper"
+}
